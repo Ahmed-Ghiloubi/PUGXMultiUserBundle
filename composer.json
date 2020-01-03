@@ -19,7 +19,8 @@
         "doctrine/doctrine-bundle": "^2.0.2",
         "doctrine/common": "^2.2",
         "symfony/framework-bundle": "^4.3",
-        "friendsofsymfony/user-bundle": "^2.0"
+        "friendsofsymfony/user-bundle": "^2.0",
+        "symfony/phpunit-bridge": "v5.0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "7.*"
