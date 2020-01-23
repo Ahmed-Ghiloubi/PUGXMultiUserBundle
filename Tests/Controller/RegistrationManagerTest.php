@@ -32,7 +32,7 @@ class RegistrationManagerTest extends \PHPUnit_Framework_TestCase
         $this->form = $this->getMockBuilder('Symfony\Component\Form\Form')
                 ->disableOriginalConstructor()->getMock();
 
-        $this->twig = $this->getMockBuilder('Symfony\Bundle\FrameworkBundle\Templating\EngineInterface')
+        $this->twig = $this->getMockBuilder('Twig\Environment')
                 ->disableOriginalConstructor()->getMock();
 
         $this->formView = $this->getMockBuilder('Symfony\Component\Form\FormView')
@@ -104,7 +104,7 @@ class RegistrationManagerTest extends \PHPUnit_Framework_TestCase
         $this->container
                 ->expects($this->at(1))
                 ->method('get')
-                ->with('templating')
+                ->with('twig')
                 ->will($this->returnValue($this->twig));
 
         $this->twig
@@ -144,7 +144,7 @@ class RegistrationManagerTest extends \PHPUnit_Framework_TestCase
         $this->container
                 ->expects($this->at(1))
                 ->method('get')
-                ->with('templating')
+                ->with('twig')
                 ->will($this->returnValue($this->twig));
 
         $this->twig

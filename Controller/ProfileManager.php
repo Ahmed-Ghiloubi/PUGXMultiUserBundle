@@ -70,7 +70,7 @@ class ProfileManager
 
         $form = $this->formFactory->createForm();
 
-        return $this->container->get('templating')->renderResponse($template, [
+        return $this->container->get('twig')->renderResponse($template, [
             'form' => $form->createView(),
         ]);
     }
