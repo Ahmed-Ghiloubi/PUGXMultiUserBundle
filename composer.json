@@ -1,5 +1,5 @@
 {
-    "name": "exs/multi-user-bundle",
+    "name": "ahmed-ghiloubi/multi-user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony PUGXMultiUserBundle",
     "keywords": ["user management", "multi user management"],
